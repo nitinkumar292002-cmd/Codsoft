@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nitin Singh | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header id="home">
+    <nav class="navbar">
+      <div class="logo">Nitin Singh</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Hello, I'm <span>Nitin Singh</span></h1>
+      <p class="tagline">Front-End Developer | Designer | Coder</p>
+      <a href="#about" class="btn">Explore More</a>
+    </div>
+  </header>
+
+   <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="section-container about-section">
+      <div class="about-img">
+        <img src="ni.jpg" alt="My Photo">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hello! I'm <b>Nitin Singh</b>, a front-end developer who loves crafting
+          clean, interactive, and visually appealing websites. My focus is on creating
+          responsive layouts and intuitive interfaces that bring ideas to life.
+        </p>
+        <p>
+          When I’m not coding, I explore new design trends, experiment with creative effects,
+          and continuously learn to improve my development skills.
+        </p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="section-container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">SQL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <div class="section-container">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="portfolio.webp" alt="Portfolio Website">
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>My personal portfolio built with modern CSS animations and clean design.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="wheather.jpg" alt="Weather App">
+          <div class="project-info">
+            <h3>Weather App</h3>
+            <p>A live weather app using JavaScript and OpenWeather API for real-time updates.</p>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="cologe dbms.webp" alt="DBMS Project">
+          <div class="project-info">
+            <h3>College DBMS</h3>
+            <p>A database management system project with PHP & SQL integration.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume">
+    <div class="section-container resume-section">
+      <h2>Resume</h2>
+      <p>Interested in working with me? Download my resume below.</p>
+      <a href="resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <!-- CONTACT SECTION -->
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <p>Have a project or idea? Let’s collaborate and build something amazing together.</p>
+  
+  <div class="contact-info">
+    <div class="contact-card">
+      <h4>Email</h4>
+      <a href="mailto:nitin@example.com">nitin@example.com</a>
+    </div>
+    <div class="contact-card">
+      <h4>Phone</h4>
+      <p>+91 XXXXX XX762</p>
+    </div>
+    <div class="contact-card">
+      <h4>Location</h4>
+      <p>India</p>
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Nitin Singh | Designed with ❤️ and HTML & CSS</p>
+  </footer>
+
+
+  <!-- JS for scroll navbar effect -->
+  <script>
+    window.addEventListener("scroll", function() {
+      const navbar = document.querySelector(".navbar");
+      if (window.scrollY > 80) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+<script>
+window.addEventListener("scroll", () => {
+  const skills = document.querySelector("#skills");
+  const rect = skills.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 150) {
+    skills.classList.add("visible");
+  }
+});
+</script>
